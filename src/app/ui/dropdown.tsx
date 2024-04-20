@@ -3,7 +3,7 @@ import '@/app/styles/dropdown.css';
 
 function DropDown() {
 	return (
-		<div className='d-flex ms-auto me-20'>
+		<div className='d-flex xsmall-dropdown'>
 			<Dropdown
 				className='d-flex align-items-center'
 				title='hello'>
@@ -18,7 +18,7 @@ function DropDown() {
 					className=''
 					variant='light'>
 					<Dropdown.Item
-						href=''
+						href='https://t.me/+ouEHkbTLWWE2NmQ6'
 						id='dropdown-item'>
 						Телеграм
 					</Dropdown.Item>

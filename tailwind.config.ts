@@ -17,6 +17,12 @@ const config: Config = {
 				'3xl': '2px 2px 15px rgba(0, 0, 0, 0.3)',
 			},
 		},
+		screens: {
+			xsm: '375px',
+			sm: '640px',
+			md: '768px',
+			lg: '1024px',
+		},
 	},
 	plugins: [],
 };

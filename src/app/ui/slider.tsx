@@ -8,20 +8,12 @@ import DistantHelper from './vacancies/distant-helper';
 import { MoscowMaster } from './vacancies/moscow-master';
 import { SaleManager } from './vacancies/sale-manager';
 
-function ControlledCarousel() {
-	const [index, setIndex] = useState(0);
-
-	const handleSelect = (selectedIndex: number) => {
-		setIndex(selectedIndex);
-	};
-
+function UncontrolledCarousel() {
 	return (
 		<Carousel
-			activeIndex={index}
-			onSelect={handleSelect}
-			className={`flex flex-row d-block w-75 h-50 m-auto top-[8rem]`}
-			interval={null}>
-			<Carousel.Item className=''>
+			interval={null}
+			className={`flex flex-row w-[100%] h-60 lg:h-[750px] relative m-auto top-[8rem]`}>
+			<Carousel.Item className='item'>
 				<Deliverier />
 			</Carousel.Item>
 			<Carousel.Item className=''>
@@ -40,4 +32,4 @@ function ControlledCarousel() {
 	);
 }
 
-export default ControlledCarousel;
+export default UncontrolledCarousel;

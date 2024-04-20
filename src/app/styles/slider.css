@@ -1,32 +1,72 @@
 .carousel-control-prev,
 .carousel-control-next {
-	color: #fff;
 	border-radius: 50%;
-	width: 40px;
-	height: 40px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	top: 50%;
+	transform: translateY(-50%);
 	position: absolute;
-	top: 25%;
+	height: 40px;
+	width: 40px;
 }
+
 .carousel-control-prev {
-	left: 70px;
+	left: 12%;
 }
 .carousel-control-next {
-	right: 70px;
+	right: 12%;
+}
+
+@media (min-width: 1024px) {
+	.carousel-control-prev {
+		left: 10%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.carousel-control-next {
+		right: 10%;
+	}
+}
+
+@media (min-width: 1024px) {
+	#btn {
+		display: none;
+	}
+}
+@media (min-width: 1024px) and (max-width: 1550px) {
+	#set-slide {
+		line-height: 1.25rem;
+		height: 740px;
+		padding-top: 0px;
+		font-size: 15px;
+	}
+}
+@media (min-width: 1024px) and (max-width: 1550px) {
+	.carousel-indicators {
+		bottom: 3% !important;
+	}
+}
+@media (min-width: 1550px) {
+	.carousel-indicators {
+		bottom: 7% !important;
+	}
 }
 .carousel-indicators {
 	margin: auto;
 	padding: 0;
 	z-index: 10;
-	width: 20%;
+	width: 30%;
 	position: absolute;
 	justify-content: center;
-	align-items: center;
-	top: 10px;
+	align-items: end;
+	bottom: 6%;
+}
+.carousel-inner {
+	overflow: visible;
 }
 #seeMore:active {
 	background-color: #007bff;
 	color: #fff;
+}
+#btn {
+	color: red;
 }
